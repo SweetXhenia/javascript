@@ -1,10 +1,28 @@
-a{
-    text-decoration: none;
-    font-size: 2.5rem;
-    border: 2px solid black;
-    padding: 10px 15px;
-    border-radius: 2rem;
-    color: white;
-    background-color: rgb(83, 165, 138);
-    box-shadow: 2px 2px black;
+a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(83, 165, 138);
+  box-shadow: 2px 2px black;
+}
+h1 {
+  color: cadetblue;
+}
+.button2 {
+  text-decoration: none;
+  font-size: 2.5rem;
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(211, 208, 42);
+  box-shadow: 2px 2px black;
+}
+.button2:hover{
+    background-color: rgb(255, 251, 0);
+    box-shadow: 3px 3px black;
+    color: rgba(0, 0, 0, 0.582);
 }
