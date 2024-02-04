@@ -268,16 +268,11 @@ document
 
     //todo vytvoříme odstavec a přidáme text z inputu
     let paragraph = document.createElement("p");
-    paragraph.textContent = `Jméno: ${event.target.elements.firstName.value}`;
+    paragraph.innerHTML = `Jméno: ${event.target.elements.firstName.value}, <br>
+    Příjmení: ${event.target.elements.secondName.value}, <br>
+    E-mail: ${event.target.elements.email.value}`;
     document.querySelector("#from-form").appendChild(paragraph);
 
-    let paragraph2 = document.createElement("p");
-    paragraph2.textContent = `Příjmení: ${event.target.elements.secondName.value}`;
-    document.querySelector("#from-form").appendChild(paragraph2);
-
-    let paragraph3 = document.querySelector("p");
-    paragraph3.textContent = `E-mail: ${event.target.elements.email.value}`;
-    document.querySelector("#from-form").appendChild(paragraph3);
 
     //todo po odeslání vymaže obsah inputu
     event.target.elements.firstName.value = "";
