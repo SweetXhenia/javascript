@@ -18,11 +18,89 @@ h1 {
   padding: 10px 15px;
   border-radius: 2rem;
   color: white;
-  background-color: rgb(211, 208, 42);
+  background-color: rgb(211, 143, 42);
   box-shadow: 2px 2px black;
 }
 .button2:hover{
-    background-color: rgb(255, 251, 0);
+    background-color: rgb(255, 145, 0);
     box-shadow: 3px 3px black;
     color: rgba(0, 0, 0, 0.582);
+}
+.heading{
+  padding: 1rem 3rem 1rem;
+  border-bottom: 3px solid rgb(13, 172, 137);
+  background-color: rgba(95, 158, 160, 0.185);
+}
+.todoapp{
+  padding: 2rem 2rem 1rem;
+  border-bottom: 3px solid rgb(255, 160, 17);
+  background-color: rgba(255, 166, 0, 0.192);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.todoapp button  {
+  display: block;
+  margin: 1rem;
+}
+.todoapp a {
+  display: inline-block;
+}
+.todoapp h2 {
+  color: rgb(197, 129, 2);
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+#vypisUkolu{
+  padding: .5rem;
+  border-radius: 15px;
+
+}
+#inputUkol{
+  padding: .5rem;
+  border-radius: 15px;
+  border: 5px dotted rgb(241, 140, 7);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(241, 191, 115, 0.781);
+  transition: ease-in-out .2s;
+  text-align: center;
+}
+#inputUkol:focus-visible{
+border: 5px dotted rgb(134, 80, 8);
+outline: none;
+background-color: rgba(231, 207, 71, 0.377);
+padding: 1rem;
+transition: ease-in-out .2s;
+}
+.criminalsPart{
+  padding: 3rem 3rem 2rem;
+  border-bottom: 3px solid rgb(17, 255, 57);
+  background-color: rgba(43, 255, 0, 0.192);
+}
+
+.formularPart{
+  padding: 3rem 3rem 2rem;
+  border-bottom: 3px solid #0D9276;
+  background-color: #BBE2EC;
+  color: #0D9276;
+}
+.formHeading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#testForm{
+  display: flex;
+  flex-direction: column;
+  width: 13rem;
+  gap: .5rem;
+}
+#testForm input{
+  padding: .3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border: 3px solid #0D9276;
+  border-radius: 10px;
+  background-color: #FFF6E9;
+  
+}
+#testForm input:last-child{
+  background-color: #40a2e362;
 }
