@@ -266,16 +266,106 @@ document
     //todo přístup k obsahu inputu
     //console.log(event.target.elements.firstName.value);
 
+    //todo přiřezení hodnot z inputu do proměnné
+    let formName = event.target.elements.firstName.value;
+    let formSecondName = event.target.elements.secondName.value;
+    let formEmail = event.target.elements.email.value;
+
     //todo vytvoříme odstavec a přidáme text z inputu
     let paragraph = document.createElement("p");
-    paragraph.innerHTML = `Jméno: ${event.target.elements.firstName.value}, <br>
-    Příjmení: ${event.target.elements.secondName.value}, <br>
-    E-mail: ${event.target.elements.email.value}`;
+    paragraph.innerHTML = `Jméno: <b>${formName}</b> <br>
+    Příjmení: <b>${formSecondName}</b> <br>
+    E-mail:<b> ${formEmail}</b>`;
     document.querySelector("#from-form").appendChild(paragraph);
-
 
     //todo po odeslání vymaže obsah inputu
     event.target.elements.firstName.value = "";
     event.target.elements.secondName.value = "";
     event.target.elements.email.value = "";
   });
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//! Checkbox part
+
+/* let myCheckBox = document.querySelector("#my-checkbox")
+myCheckBox.addEventListener("change", function(event){
+}) */
+
+let myForm = document.querySelector("#my-form");
+let count = 0;
+
+myForm.addEventListener("submit", function (event) {
+  //todo vypneme výchozí chování formuláře
+  event.preventDefault();
+
+  //todo přístup k obsahu políčka (vypíše)
+  //console.log(event.target.elements.task.value);
+
+  //todo count zvyšujeme o jedna
+  //count = count + 1
+  count += 1; //todo lepší pro zápis, dělá to samé
+
+  let input = document.createElement("input");
+  input.type = "checkbox";
+  input.id = `testovací-${count}`;
+  document.querySelector("#results").appendChild(input);
+
+  let label = document.createElement("label");
+  label.textContent = event.target.elements.task.value
+
+  //todo jaký atribut  ↓ a jakou hodnotu ↓
+  label.setAttribute("for", `testovací-${count}`)
+  document.querySelector("#results").appendChild(label)
+
+
+  //todo vyčistí input
+  event.target.elements.task.value = "";
+});
+
+
+let todoappForm = document.querySelector(".todoappPart__form")
+let todoappCount = 0;
+
+todoappForm.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  todoappCount += 1;
+
+  let input = document.createElement("input");
+  input.type = "checkbox";
+  input.id = `task-${todoappCount}`
+  document.querySelector("#todoappPart__results").appendChild(input)
+
+  let label = document.createElement("label")
+  label.textContent = e.target.elements.task.value
+  label.setAttribute("for", `task-${todoappCount}`)
+  document.querySelector("#todoappPart__results").appendChild(label)
+
+input.addEventListener("change", function(e){
+  if(input.checked){
+    label.style.textDecoration = "line-through"
+    label.style.fontWeight = 100
+    label.style.opacity = .5
+  } else {
+    label.style.textDecoration = "none"
+    label.style.fontWeight = 600
+    label.style.opacity = 1
+  }
+})
+
+  e.target.elements.task.value = "";
+})

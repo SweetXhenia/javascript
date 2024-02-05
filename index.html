@@ -8,36 +8,25 @@
   </head>
   <body>
 
+
+
     
-    <div class="heading">
-      <h1>Javascript procvičování</h1>
-      <h2 class="interactive">Klikni na mě</h2>
-      <h3 class="interactive">Na mě taky</h3>
-      <h4 class="interactive">Na mě ne</h4>
-      <a href="#">Button</a>
-    </div>
-
-
-
-    <div class="todoapp">
-      <h2>My to do app</h2>
-      <!-- <a href="#" class="button2">Tlačítko</a>
-      <button class="btn-1">První tlačítko</button>
-      <button class="btn-2">Druhé tlačítko</button>
-      <input type="text" id="input-text" placeholder="Jméno a příjmení" /> -->
-      <input type="text" placeholder="Název úkolu" id="inputUkol">
-      <p id="pocetZbylychUkolu"></p>
-      <p id="pocetShodnychUkolu"></p>
-      <div id="vypisUkolu"></div>
-    </div>
-
-
-
-
-    <div class="criminalsPart">
-      <h2>Najdi zločince</h2>
-      <input type="text" id="licence-plate" placeholder="SPZ" />
-      <div id="idCriminal">
+    <div id="todoappPart">
+      <h2 class="todoappPart__heading">Úkolníček</h2>
+      <form class="todoappPart__form">
+        <input
+          type="text"
+          id="todoappPart__form--inputText"
+          placeholder="Jaký úkol chceš přidat?"
+          name="task"
+        />
+        <input
+          type="submit"
+          id="todoappPart__form--inputSumbit"
+          value="Připni mě"
+        />
+      </form>
+      <div id="todoappPart__results">
 
       </div>
     </div>
@@ -45,18 +34,61 @@
 
 
 
-<div class="formularPart">
-  <h2 class="formHeading">Formulář</h2>
-  <form id="testForm">
-    <input type="text" placeholder="Křestní jméno" name="firstName">
-    <input type="text" placeholder="Příjmení" name="secondName">
-    <input type="email" placeholder="E-mail" name="email">
-    <input type="submit" value="Odeslat">
-  </form>
-  <div id="from-form"></div>
-</div>
 
 
+
+    <div class="checkboxPart">
+      <!-- <label for="my-checkbox">Zaškrtni mě</label>
+  <input type="checkbox" id="my-checkbox"> -->
+      <h2>Check box hraní</h2>
+      <form id="my-form">
+        <input
+          type="text"
+          placeholder="Vyplňte úkol"
+          id="my-form-Input"
+          name="task"
+        />
+        <input type="submit" value="Připni" class="checkboxSubmit" />
+      </form>
+      <div id="results"></div>
+    </div>
+
+    <div class="formularPart">
+      <h2 class="formHeading">Formulář</h2>
+      <form id="testForm">
+        <input type="text" placeholder="Křestní jméno" name="firstName" />
+        <input type="text" placeholder="Příjmení" name="secondName" />
+        <input type="email" placeholder="E-mail" name="email" />
+        <input type="submit" value="Odeslat" />
+      </form>
+      <div id="from-form"></div>
+    </div>
+
+    <div class="todoapp">
+      <h2>My to do app</h2>
+      <!-- <a href="#" class="button2">Tlačítko</a>
+      <button class="btn-1">První tlačítko</button>
+      <button class="btn-2">Druhé tlačítko</button>
+      <input type="text" id="input-text" placeholder="Jméno a příjmení" /> -->
+      <input type="text" placeholder="Název úkolu" id="inputUkol" />
+      <p id="pocetZbylychUkolu"></p>
+      <p id="pocetShodnychUkolu"></p>
+      <div id="vypisUkolu"></div>
+    </div>
+
+    <div class="criminalsPart">
+      <h2>Najdi zločince</h2>
+      <input type="text" id="licence-plate" placeholder="SPZ" />
+      <div id="idCriminal"></div>
+    </div>
+
+    <div class="heading">
+      <h1>Javascript procvičování</h1>
+      <h2 class="interactive">Klikni na mě</h2>
+      <h3 class="interactive">Na mě taky</h3>
+      <h4 class="interactive">Na mě ne</h4>
+      <a href="#">Button</a>
+    </div>
 
     <script src="script.js"></script>
   </body>
