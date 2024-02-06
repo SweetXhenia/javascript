@@ -325,47 +325,45 @@ myForm.addEventListener("submit", function (event) {
   document.querySelector("#results").appendChild(input);
 
   let label = document.createElement("label");
-  label.textContent = event.target.elements.task.value
+  label.textContent = event.target.elements.task.value;
 
   //todo jaký atribut  ↓ a jakou hodnotu ↓
-  label.setAttribute("for", `testovací-${count}`)
-  document.querySelector("#results").appendChild(label)
-
+  label.setAttribute("for", `testovací-${count}`);
+  document.querySelector("#results").appendChild(label);
 
   //todo vyčistí input
   event.target.elements.task.value = "";
 });
 
-
-let todoappForm = document.querySelector(".todoappPart__form")
+let todoappForm = document.querySelector(".todoappPart__form");
 let todoappCount = 0;
 
-todoappForm.addEventListener("submit", function(e){
+todoappForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
   todoappCount += 1;
 
   let input = document.createElement("input");
   input.type = "checkbox";
-  input.id = `task-${todoappCount}`
-  document.querySelector("#todoappPart__results").appendChild(input)
+  input.id = `task-${todoappCount}`;
+  document.querySelector("#todoappPart__results").appendChild(input);
 
-  let label = document.createElement("label")
-  label.textContent = e.target.elements.task.value
-  label.setAttribute("for", `task-${todoappCount}`)
-  document.querySelector("#todoappPart__results").appendChild(label)
+  let label = document.createElement("label");
+  label.textContent = e.target.elements.task.value;
+  label.setAttribute("for", `task-${todoappCount}`);
+  document.querySelector("#todoappPart__results").appendChild(label);
 
-input.addEventListener("change", function(e){
-  if(input.checked){
-    label.style.textDecoration = "line-through"
-    label.style.fontWeight = 100
-    label.style.opacity = .5
-  } else {
-    label.style.textDecoration = "none"
-    label.style.fontWeight = 600
-    label.style.opacity = 1
-  }
-})
+  input.addEventListener("change", function (e) {
+    if (input.checked) {
+      label.style.textDecoration = "line-through";
+      label.style.fontWeight = 100;
+      label.style.opacity = 0.5;
+    } else {
+      label.style.textDecoration = "none";
+      label.style.fontWeight = 600;
+      label.style.opacity = 1;
+    }
+  });
 
   e.target.elements.task.value = "";
-})
+});
