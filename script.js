@@ -367,3 +367,46 @@ todoappForm.addEventListener("submit", function (e) {
 
   e.target.elements.task.value = "";
 });
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+
+let mySelect = document.querySelector("#my-select")
+
+mySelect.addEventListener("change", function(e){
+console.log(e.target.value);
+})
+
+let button3 = document.querySelector("#button3")
+button3.addEventListener("mouseleave", function(e){
+  console.log(e);
+})
+
+document.querySelector("body").addEventListener("keypress", function(e){
+  console.log(e.key);
+})
+
+let heading = document.querySelector(".roletkaPart__heading")
+heading.addEventListener("mouseenter", function(e){
+  heading.style.color = "blue"
+  heading.style.fontSize = "3rem"
+  heading.style.fontWeight = 100
+})
+
+heading.addEventListener("mouseleave", function(e){
+heading.style.color = "green"
+heading.style.fontSize = "1rem"
+})

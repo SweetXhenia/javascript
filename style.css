@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   font-size: 2.5rem;
@@ -181,4 +186,16 @@ text-decoration: line-through;
 }
 #todoappPart__results label{
   transition: .3s ;
+}
+
+.roletkaPart{
+  padding: 1rem;
+  background-color: #50d6fe;
+}
+
+.roletkaPart h2{
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f7dfd4;
+  padding-bottom: 1rem;
 }
