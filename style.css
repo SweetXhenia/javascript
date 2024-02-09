@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -168,11 +168,11 @@ text-decoration: line-through;
   border: 3px solid #807182;
 }
 
-#todoappPart__form--inputSumbit{
-  padding: .5rem;
+#todoappPart__form--inputSumbit {
+  padding: 0.5rem;
   border-radius: 10px;
   border: 3px solid #807182;
-  background-color: #F7B1AB;
+  background-color: #f7b1ab;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -184,25 +184,24 @@ text-decoration: line-through;
   color: #443a46;
   font-weight: 600;
 }
-#todoappPart__results label{
-  transition: .3s ;
+#todoappPart__results label {
+  transition: 0.3s;
 }
 
-.roletkaPart{
+.roletkaPart {
   padding: 1rem;
-  
- /*  background-color: #4ed6ff; */
+
+  /*  background-color: #4ed6ff; */
 }
 
-.roletkaPart h2{
+.roletkaPart h2 {
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(206, 88, 88);
   padding-bottom: 1rem;
 }
 
-
-.square{
+.square {
   width: 50px;
   height: 50px;
   background-color: #0d9276;
