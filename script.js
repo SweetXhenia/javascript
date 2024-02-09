@@ -443,3 +443,46 @@ rgbChangeColor.addEventListener("submit", function (e) {
 
   roletkaColor.style.backgroundColor = `rgb(${input1}, ${input2}, ${input3})`;
 });
+
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+//////
+let myDiv = document.querySelector(".square")
+
+/* myDiv.style.top = "50px"
+myDiv.style.left = "50px" */
+
+let newLeft = null;
+let newTop = null;
+document.querySelector("body").addEventListener("keydown", function(e){
+  e.preventDefault()
+  if(e.key === "ArrowLeft"){
+    newLeft = newLeft - 10
+    myDiv.style.left = newLeft + "px"
+
+  } else if (e.key === "ArrowRight"){
+    newLeft = newLeft + 10
+    myDiv.style.left = newLeft + "px"
+
+  } else if (e.key === "ArrowUp"){
+    newTop = newTop -10
+    myDiv.style.top = newTop + "px"
+    
+  } else if (e.key ==="ArrowDown"){
+    newTop = newTop + 10
+    myDiv.style.top = newTop + "px"
+  }
+})
