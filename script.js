@@ -395,9 +395,9 @@ button3.addEventListener("mouseleave", function (e) {
   //console.log(e);
 });
 
-document.querySelector("body").addEventListener("keypress", function (e) {
+/* document.querySelector("body").addEventListener("keypress", function (e) {
   //console.log(e.key);
-});
+}); */
 
 let heading = document.querySelector(".roletkaPart__heading");
 heading.addEventListener("mouseenter", function (e) {
@@ -469,7 +469,7 @@ myDiv.style.left = "50px" */
 let newLeft = null;
 let newTop = null;
 document.querySelector("body").addEventListener("keydown", function (e) {
-  e.preventDefault();
+  
   if (e.key === "ArrowLeft") {
     newLeft = newLeft - 10;
     myDiv.style.left = newLeft + "px";
