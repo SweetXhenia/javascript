@@ -384,29 +384,62 @@ todoappForm.addEventListener("submit", function (e) {
 //////
 //////
 
-let mySelect = document.querySelector("#my-select")
+let mySelect = document.querySelector("#my-select");
 
-mySelect.addEventListener("change", function(e){
-console.log(e.target.value);
-})
+mySelect.addEventListener("change", function (e) {
+  console.log(e.target.value);
+});
 
-let button3 = document.querySelector("#button3")
-button3.addEventListener("mouseleave", function(e){
-  console.log(e);
-})
+let button3 = document.querySelector("#button3");
+button3.addEventListener("mouseleave", function (e) {
+  //console.log(e);
+});
 
-document.querySelector("body").addEventListener("keypress", function(e){
-  console.log(e.key);
-})
+document.querySelector("body").addEventListener("keypress", function (e) {
+  //console.log(e.key);
+});
 
-let heading = document.querySelector(".roletkaPart__heading")
-heading.addEventListener("mouseenter", function(e){
-  heading.style.color = "blue"
-  heading.style.fontSize = "3rem"
-  heading.style.fontWeight = 100
-})
+let heading = document.querySelector(".roletkaPart__heading");
+heading.addEventListener("mouseenter", function (e) {
+  //heading.style.color = "blue"
+  heading.style.letterSpacing = "1.5rem";
+  heading.style.fontWeight = 100;
+});
 
-heading.addEventListener("mouseleave", function(e){
-heading.style.color = "green"
-heading.style.fontSize = "1rem"
-})
+heading.addEventListener("mouseleave", function (e) {
+  //heading.style.color = "green"
+  heading.style.fontSize = "1rem";
+});
+
+let style = getComputedStyle(heading);
+/* console.log(style.color);
+console.log(style.backgroundColor); */
+
+///////////////////
+
+let changeColorForm = document.querySelector(".changeColorForm");
+let myBody = document.querySelector(".roletkaPart");
+
+changeColorForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  //console.log(e.target.elements.color.value);
+
+  let inputColor = e.target.elements.color.value;
+  myBody.style.backgroundColor = inputColor;
+  e.target.elements.color.value = "";
+});
+
+////////////////////////////////////////////
+
+let rgbChangeColor = document.querySelector(".rgbChangeColor");
+let roletkaColor = document.querySelector(".roletkaPart");
+
+rgbChangeColor.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  input1 = e.target.elements.color1.value;
+  input2 = e.target.elements.color2.value;
+  input3 = e.target.elements.color3.value;
+
+  roletkaColor.style.backgroundColor = `rgb(${input1}, ${input2}, ${input3})`;
+});

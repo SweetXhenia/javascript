@@ -7,27 +7,52 @@
     <title>Document</title>
   </head>
   <body>
-
-<div class="roletkaPart">
-  <h2 class="roletkaPart__heading">Roletka a keydown</h2>
-  <select id="my-select">
-    <option value="1">První možnost</option>
-    <option value="2">Druhá možnost</option>
-    <option value="3">Třetí možnost</option>
-    
-  </select>
-  <button id="button3">odeslat</button>
-</div>
-
-
-    
-
-
-
-
-
-
-
+    <div class="roletkaPart">
+      <h2 class="roletkaPart__heading">Roletka a keydown</h2>
+      <select id="my-select">
+        <option value="1">První možnost</option>
+        <option value="2">Druhá možnost</option>
+        <option value="3">Třetí možnost</option>
+      </select>
+      <button id="button3">odeslat</button>
+      <br /><br />
+      <form class="changeColorForm">
+        <input
+          type="text"
+          placeholder="Napiš barvu v angličtině"
+          name="color"
+        />
+        <input type="submit" value="Aplikuj" />
+      </form>
+      <br />
+      <form class="rgbChangeColor">
+        <input
+          type="text"
+          placeholder="tři čísla, 0-255"
+          name="color1"
+          maxlength="3"
+          minlength="1"
+          required
+        />
+        <input
+          type="text"
+          placeholder="tři čísla, 0-255"
+          name="color2"
+          maxlength="3"
+          minlength="1"
+          required
+        />
+        <input
+          type="text"
+          placeholder="tři čísla, 0-255"
+          name="color3"
+          maxlength="3"
+          minlength="1"
+          required
+        /> 
+        <input type="submit" value="Aplikuj" />
+      </form>
+    </div>
 
     <div id="todoappPart">
       <h2 class="todoappPart__heading">Úkolníček</h2>
@@ -44,16 +69,8 @@
           value="Připni mě"
         />
       </form>
-      <div id="todoappPart__results">
-
-      </div>
+      <div id="todoappPart__results"></div>
     </div>
-
-
-
-
-
-
 
     <div class="checkboxPart">
       <!-- <label for="my-checkbox">Zaškrtni mě</label>

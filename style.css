@@ -190,12 +190,13 @@ text-decoration: line-through;
 
 .roletkaPart{
   padding: 1rem;
-  background-color: #50d6fe;
+  
+ /*  background-color: #4ed6ff; */
 }
 
 .roletkaPart h2{
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f7dfd4;
+  color: rgb(206, 88, 88);
   padding-bottom: 1rem;
 }
